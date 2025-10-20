@@ -6,119 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Patentes - Exército Brasileiro</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            box-sizing: border-box;
-        }
-        
-        .military-bg {
-            background: linear-gradient(135deg, #2d5016 0%, #1a2e0a 100%);
-            position: relative;
-        }
-        
-        .military-bg::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: 
-                repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px);
-            pointer-events: none;
-        }
-        
-        .rank-card {
-            background: linear-gradient(135deg, #3d4f1f 0%, #2a3518 100%);
-            border: 2px solid #5a6b2d;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .rank-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-            transition: left 0.5s;
-        }
-        
-        .rank-card:hover::before {
-            left: 100%;
-        }
-        
-        .rank-card:hover {
-            transform: translateY(-3px);
-            border-color: #8b9f47;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-        
-        .rank-insignia {
-            width: 80px;
-            height: 80px;
-            background: #1a2e0a;
-            border: 3px solid #8b9f47;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            margin: 0 auto 1rem;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .camo-pattern {
-            background-image: 
-                radial-gradient(circle at 20% 50%, #2d5016 20%, transparent 21%),
-                radial-gradient(circle at 40% 20%, #1a2e0a 15%, transparent 16%),
-                radial-gradient(circle at 90% 30%, #3d4f1f 18%, transparent 19%);
-            background-size: 30px 30px;
-        }
-        
-        .military-header {
-            background: linear-gradient(135deg, #1a2e0a 0%, #0f1a05 100%);
-            border-bottom: 4px solid #8b9f47;
-        }
-        
-        .star-decoration {
-            color: #ffd700;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-        }
-        
-        .military-button {
-            background: linear-gradient(135deg, #8b9f47 0%, #6b7a35 100%);
-            border: 2px solid #a4b852;
-            transition: all 0.3s ease;
-        }
-        
-        .military-button:hover {
-            background: linear-gradient(135deg, #a4b852 0%, #8b9f47 100%);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/style.css">
+    
 </head>
 <body class="military-bg text-white min-h-full">
     <!-- Header -->
     <header class="military-header py-8 shadow-2xl">
-        <div class="container mx-auto px-4">
-            <div class="text-center">
-                <div class="flex justify-center items-center space-x-6 mb-4">
-                    <div class="text-6xl">🇧🇷</div>
-                    <div>
-                        <h1 class="text-5xl font-bold text-green-100">DESENVOLVIMENTO DE SISTEMAS</h1>
-                        <p class="text-2xl text-green-300 mt-2">E.E Carlos Gomes</p>
-                    </div>
-                    <div class="text-6xl">⚔️</div>
+        
+    </nav>
+    <div class="container mx-auto px-4">
+        <div class="text-center">
+            <div class="flex justify-center items-center space-x-6 mb-4">
+                <div class="text-6xl">🇧🇷</div>
+                <div>
+                    <h1 class="text-5xl font-bold text-green-100">DESENVOLVIMENTO DE SISTEMAS</h1>
+                    <p class="text-2xl text-green-300 mt-2">E.E Carlos Gomes</p>
                 </div>
-                <div class="text-green-200 text-lg font-semibold">
-                    "Marchar juntos, aprender juntos, rumo à vanguarda."
-                </div>
+                <div class="text-6xl">⚔️</div>
+            </div>
+            <div class="text-green-200 text-lg font-semibold">
+                "Marchar juntos, aprender juntos, rumo à vanguarda."
+            </div>
+            <nav>
+                <ul class="barradebavegação">
+                    <li class="a"><a href="./page/perfil.html">Perfil</a></li>
+                    <li class="b"><a href="./page/ranking.html">Ranking</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -130,9 +43,7 @@
             <div class="camo-pattern rounded-lg p-10 border-2 border-green-600">
                 <h2 class="text-4xl font-bold mb-6 text-green-100">🎖️ HIERARQUIA MILITAR</h2>
                 <p class="text-xl text-green-200 max-w-4xl mx-auto leading-relaxed">
-                    O sistema de patentes do Exército Brasileiro estabelece a hierarquia e disciplina necessárias 
-                    para o cumprimento da missão constitucional. Cada posto representa responsabilidades específicas 
-                    e níveis crescentes de liderança e conhecimento militar.
+                   O sistema de patentes aplicado aos alunos do curso técnico de Desenvolvimento de Sistemas estabelece uma hierarquia organizada, com regras e responsabilidades claras, visando estruturar o aprendizado e a colaboração. Cada patente corresponde a um nível de conhecimento, habilidades técnicas e responsabilidades específicas, incentivando liderança, progresso contínuo e engajamento dentro do grupo.
                 </p>
             </div>
         </section>
@@ -146,7 +57,7 @@
                 <!-- Soldado -->
                 <div class="rank-card rounded-lg p-6">
                     <div class="rank-insignia">
-                        <img src="Rank_01.webp" alt="">
+                        <img src="./img/Rank_01.webp" alt="">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 text-green-100">Recruta I</h3>
                     <div class="bg-black bg-opacity-40 rounded-lg p-4">
@@ -166,7 +77,7 @@
                 <!-- Cabo -->
                 <div class="rank-card rounded-lg p-6">
                     <div class="rank-insignia">
-                        <img src="Rank_02.webp" alt="">
+                        <img src="./img/Rank_02.webp" alt="">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 text-green-100">Recruta II</h3>
                     <div class="bg-black bg-opacity-40 rounded-lg p-4">
@@ -193,7 +104,7 @@
                 <!-- Aspirante -->
                 <div class="rank-card rounded-lg p-6">
                     <div class="rank-insignia">
-                        <img src="Rank_03.webp" alt="">
+                        <img src="./img/Rank_03.webp" alt="">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 text-green-100">CABO I</h3>
                     <div class="bg-black bg-opacity-40 rounded-lg p-4">
@@ -214,7 +125,7 @@
                 <!-- Tenente -->
                 <div class="rank-card rounded-lg p-6">
                     <div class="rank-insignia">
-                        <img src="Rank_04.webp" alt="">
+                        <img src="./img/Rank_04.webp" alt="">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 text-green-100">CABO II</h3>
                     <div class="bg-black bg-opacity-40 rounded-lg p-4">
@@ -231,7 +142,7 @@
                 <!-- Capitão -->
                 <div class="rank-card rounded-lg p-6">
                     <div class="rank-insignia">
-                        <img src="Rank_05.webp" alt="">
+                        <img src="./img/Rank_05.webp" alt="">
 
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 text-green-100">CABO III</h3>
@@ -257,7 +168,7 @@
                 <!-- Aspirante -->
                 <div class="rank-card rounded-lg p-6">
                     <div class="rank-insignia">
-                        <img src="Rank_07.webp" alt="">
+                        <img src="./img/Rank_07.webp" alt="">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 text-green-100">ASPIRANTE</h3>
                     <div class="bg-black bg-opacity-40 rounded-lg p-4">
@@ -278,7 +189,7 @@
                 <!-- Tenente -->
                 <div class="rank-card rounded-lg p-6">
                     <div class="rank-insignia">
-                        <img src="Rank_08.webp" alt="">
+                        <img src="./img/Rank_08.webp" alt="">
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 text-green-100">TENENTE</h3>
                     <div class="bg-black bg-opacity-40 rounded-lg p-4">
@@ -295,7 +206,7 @@
                 <!-- Capitão -->
                 <div class="rank-card rounded-lg p-6">
                     <div class="rank-insignia">
-                        <img src="Rank_09.webp" alt="">
+                        <img src="./img/Rank_09.webp" alt="">
 
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4 text-green-100">CAPITÃO</h3>

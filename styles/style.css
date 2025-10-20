@@ -1,0 +1,189 @@
+body {
+            box-sizing: border-box;
+            font-size: 30px;
+            margin: 0;
+            margin-top: 0%;
+            background: no-repeat;
+            background-size: cover;            
+            background-attachment: fixed;
+            background-image: url("./deixe\ mais\ malvada.png");
+            align-items: center;
+            justify-content: center;
+           
+            
+        }
+        
+        .military-bg {
+            background-image: url("./deixe\ mais\ malvada.png");
+            position: relative;
+        }
+        
+        .military-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px);
+            pointer-events: none;
+        }
+        
+        .rank-card {
+            background-color:#006400;
+            border: 5px solid #5a6b2d;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+    
+        }
+        
+        .rank-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .rank-card:hover::before {
+            left: 100%;
+        }
+        
+        .rank-card:hover {
+            transform: translateY(-3px);
+            border-color: #8b9f47;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        .rank-insignia {
+            width: 80px;
+            height: 80px;
+            background: #1a2e0a;
+            border: 3px solid #8b9f47;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .camo-pattern {
+            background-color: black;
+            opacity:0.8
+           
+        }
+        
+        .military-header {
+            background-color: black;
+            border-bottom: 4px solid #8b9f47;
+            opacity: 0.8
+        }
+        
+        .star-decoration {
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        
+        .military-button {
+            background-color:#006400;
+            border: 2px solid #a4b852;
+            transition: all 0.3s ease;
+        }
+        
+        .military-button:hover {
+            background-color:#006400;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+
+        .barradebavegação{
+            display: flex;
+            gap: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+           
+           
+        }
+
+        .a{
+            background-color:#006400;
+            border: solid white;
+            border-radius: 5px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .b{
+            background-color:#006400;
+            border: solid white;
+            border-radius: 5px;
+            padding: 10px;
+            text-decoration: none;
+           
+        }
+
+        .a:hover{
+            background-color:#006400;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+
+        .b:hover{
+            background-color:#006400;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+        }
+
+
+        .fotodeperfil{
+            transform: translateY(-3px);
+            border-color: #8b9f47;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            
+        }
+
+
+        .flexitems-start{
+        
+            border:solid 2px, black;
+            border-radius: 30px;
+            
+
+
+        }
+
+        .fotoperfil{
+            margin: 0px;
+            border-radius: 500px;
+            border: solid, 5px;
+            padding: 200px;
+            width: 100px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            
+            
+        }
+
+        .Nomeperfil{
+
+             text-align: center;
+             background-color: #8b9f47;
+             border:solid, 5px;
+             border-radius: 50px;
+             padding: 5px;
+             
+
+        }
+
